@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ekaterina Ryazanova](https://up.htmlacademy.ru/htmlcss/23/user/199186).
-* Наставник: `Неизвестно`.
+* Наставник: [Jevgeni Bogatyrjov] (https://htmlacademy.ru/profile/id922827).
 
 ---
 
