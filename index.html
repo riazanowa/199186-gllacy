@@ -179,5 +179,28 @@
         <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017 </p>
       </section>
     </footer>
+
+    <section class="modal login-modal">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-email">Электронная почта</label>
+            <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input type="password" name="password" id="user-password" placeholder="Пароль">
+          </p>
+          <p>
+            <button class="button" type="submit">Войти</button>
+          </p>
+          <p>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="regestration" href="#">Новая регистрация</a>
+          </p>
+      </form>
+      <button class="button" type="button">Закрыть</button>      
+    </section>
+
   </body>
 </html>
