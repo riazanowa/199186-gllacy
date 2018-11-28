@@ -41,10 +41,72 @@
       </ul>
       </nav>
       <h1>Сливочное мороженое</h1>
+      
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <!-- Здесь будут формы фильтров! -->
-        <input type="submit" value="Применить">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Сортировка</legend>
+            <select name="sorting">
+              <option value="by-popularuty" selected>по популярности</option>
+              <option value="first-cheap">сначала недорогие</option>
+              <option value="first-expensive">сначала дорогие</option>
+              <option value="by-fat-contant">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend><label class="visually-hidden" for="price-range">Цена: 100 руб. – 500 руб.</label></legend>
+            <input type="range" name="price-range" id="price-range" min="100" max="500" step="5">
+            <!-- НЕ знаю, как 2 колесика установить, только одно знаю как (с помощью value="500")-->
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="fat-content" value="0%">0%</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="fat-content" value="0-10%" checked>до 10%</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="fat-content" value="10-30%">до 30%</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="fat-content" value="30-100%">выше 30%</input></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul class="filling-list">
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="chocolate" checked>шоколадные</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="sugar-topping" checked>сахарные присыпки</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="fruits">фрукты</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="syrups">сиропы</input></label>
+              </li>
+              <li class="filter-option">
+                <label><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="jams">джемы</input></label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit">Применить</button>
+        </form>
       </section>
 
       <section class="catalog">
