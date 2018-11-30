@@ -11,7 +11,16 @@
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
         </a>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul name="catalog-list">
+              <li class="catalog-list-item"><a href="#">Новинки</a></li>
+              <li class="catalog-list-item"><a href="#">Сливочное</a></li>
+              <li class="catalog-list-item sorbets"><a href="#">Щербеты</a></li>
+              <li class="catalog-list-item"><a href="#">Фруктовый лед</a></li>
+              <li class="catalog-list-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="payment.html">Доставка и оплата</a></li>
           <li><a href="about_company.html">О Компании</a></li>
         </ul>
@@ -236,15 +245,5 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal modal-catalog">
-      <h2 class="visually-hidden">Каталог товаров</h2>
-      <select name="catalog-list">
-        <option value="new-items"><a href="#">Новинки</a></option>
-        <option value="creamy-items"><a href="#">Сливочное</a></option>
-        <option value="sorbet-items" selected><a href="#">Щербеты</a></option>
-        <option value="fruit-ice-items"><a href="#">Фруктовый лед</a></option>
-        <option value="melorin-items"><a href="#">Мелорин</a></option>
-      </select>
-    </section>
   </body>
 </html>
