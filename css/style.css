@@ -384,4 +384,16 @@ textarea {
   font-size: 13px;
   line-height: 24px;
   font-weight: 500;
+  text-decoration: underline;
+}
+
+
+.restore:hover,
+.restore:focus,
+.regestration:hover,
+.regestration:focus,
+.restore:active,
+.regestration:active {
+  color: #ffbc9e;
+  text-decoration: none;
 }
