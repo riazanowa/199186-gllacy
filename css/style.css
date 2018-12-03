@@ -22,7 +22,6 @@ a {
 }
 
 .main-navigation,
-.user-navigation,
 .offers-list,
 .best-sellers-list,
 .features-list,
@@ -32,9 +31,76 @@ a {
 
 .main-navigation a,
 .best-sellers a,
-article a,
 .main-footer a{
   color: #ffffff;
+}
+
+.main-navigation a{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.user-navigation a{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.best-sellers a{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+/* Повторяющаяся стилизация с artticle h1
+article a{
+  font-weight: 700;
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+*/
+
+.main-footer a{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.info-list li:first-child a{
+  font-weight: 700;
+}
+
+.copyright-developer a{
+  font-size: 12px;
+}
+
+.best-sellers a:hover,
+.best-sellers a:focus,
+.best-sellers a:active,
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active{
+  color: #ffbc9e;
+  font-weight: 500;
+}
+
+article a:hover,
+article a:focus,
+article a:active{
+  color: #e84d37;
+  font-weight: 700;
+}
+
+/*Добавила эту стилизацию отдельно для ссылки в футере, потому что отличается свойством font-weight от всех */
+.info-list li:first-child a:hover,
+.info-list li:first-child a:focus,
+.info-list li:first-child a:active,{
+  color: #ffbc9e;
+  font-weight: 700;
 }
 
 .contacts {
@@ -69,38 +135,156 @@ article a,
   background-color: #849d8f;
 }
 
+.offers-list-item{
+  text-align: left;
+}
+
+.offers-list-item h3{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.offers-list-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .first-offer {
+  background-color: #a10416;
   background-image: url("img/rasberry-background.jpg");
   background-size: 560px 229px;
   background-repeat: no-repeat;
 }
 
-.first-offer h3{
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: 700;
-}
-
-.first-offer p {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
 .second-offer {
+  background-color: #251610;
   background-image: url("img/chocolate-background.jpg");
   background-size: 560px 229px;
   background-repeat: no-repeat;
 }
 
-.second-offer h3{
-  font-size: 35px;
-  line-height: 41px;
+.best-sellers{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #849d8f;
+}
+
+.best-sellers-item-price{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.best-sellers .price-amount{
+  font-size: 45px;
+  line-height: 45px;
   font-weight: 700;
 }
 
-.first-offer p {
+.features-wrap{
+  background-color: #ece0c7;
+  background-image: url("img/waffle-background.jpg");
+  background-size: 1146px 306px;
+  background-repeat: no-repeat;
+}
+
+.features{
+  color: #323232;
+  text-align: left;
+}
+
+.feaures b{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features-list-item p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+article{
+  color: #323232;
+  text-align: left;
+  background-color: #ffffff;
+  background-image: url("img/strawberry-background.jpg");
+  background-size: 560px 220px;
+  background-repeat: no-repeat;
+}
+
+article b{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+article h1{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.sign-in{
+  color: #5a5a5a ;
+  text-align: left;
+  background-color: #f8f7f4;
+  background-size: 560px 220px;
+}
+
+.sign-in p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/*Место для стилизации формы с кнопкой*/
+
+.location-and-contacts{
+
+}
+
+.adress-and-phone-info{
+  color: #323232;
+  text-align: left;
+  background-color: #fefefe;
+  background-size: 560px 220px;
+}
+
+.adress-info{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.adress-info b{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.phone-number{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.phone-number b{
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
+
+.worktime-info{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/*Место для стилизации кнопки*/
