@@ -67,7 +67,7 @@ a {
 .button-search{
   backround-color: rgba(50, 50, 50, 0.2);
   background-image: url("img/Zoom-icon.svg") no-repeat;
-  background-image-size: 17px 17px; 
+  background-image-size: 17px 17px;
 }
 
 .best-sellers a:hover,
@@ -310,6 +310,34 @@ article h1{
   font-weight: 700;
 }
 
+.social {
+  text-align: center;
+}
+
+.social-button{
+  background-color: rgba(254, 254, 254, 0.8);
+}
+
+.copyright{
+  text-align: left;
+}
 .copyright .copyright-developer{
   font-size: 12px;
+}
+
+.modal{
+  color: #323232;
+
+  background-color: #fefefe;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.modal-answer input[type="text"],
+textarea {
+  font: inherit;
+  color: #999999;
+
+  background-color: #fffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
 }
