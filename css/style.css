@@ -14,6 +14,29 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgb(160, 32, 11, 0.76);
+  vertical-align: middle;
+
+  background-color: #eb553b;
+  border: none;
+  box-shadow: 0 2px 0 0 #ac1000;
+}
+
+
+.button:hover,
+.button:focus{
+  background-color: #eb553b,
+}
+
+.button:active{
+  box-shadow: inset 0 2px 0 0 #ac1000;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -35,47 +58,16 @@ a {
   color: #ffffff;
 }
 
-.main-navigation a{
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-}
-
 .user-navigation a{
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
 
-.best-sellers a{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-/* Повторяющаяся стилизация с artticle h1
-article a{
-  font-weight: 700;
-  color: #323232;
-  font-size: 24px;
-  line-height: 30px;
-}
-*/
-
-.main-footer a{
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #ffffff;
-}
-
-.info-list li:first-child a{
-  font-weight: 700;
-}
-
-.copyright-developer a{
-  font-size: 12px;
+.button-search{
+  backround-color: rgba(50, 50, 50, 0.2);
+  background-image: url("img/Zoom-icon.svg") no-repeat;
+  background-image-size: 17px 17px; 
 }
 
 .best-sellers a:hover,
@@ -156,6 +148,7 @@ article a:active{
 .first-offer {
   background-color: #a10416;
   background-image: url("img/rasberry-background.jpg");
+  background-position: 0 0;
   background-size: 560px 229px;
   background-repeat: no-repeat;
 }
@@ -163,6 +156,7 @@ article a:active{
 .second-offer {
   background-color: #251610;
   background-image: url("img/chocolate-background.jpg");
+  background-position: 0 0;
   background-size: 560px 229px;
   background-repeat: no-repeat;
 }
@@ -189,6 +183,7 @@ article a:active{
 .features-wrap{
   background-color: #ece0c7;
   background-image: url("img/waffle-background.jpg");
+  background-position: 0 0;
   background-size: 1146px 306px;
   background-repeat: no-repeat;
 }
@@ -215,6 +210,7 @@ article{
   text-align: left;
   background-color: #ffffff;
   background-image: url("img/strawberry-background.jpg");
+  background-position: 0 0;
   background-size: 560px 220px;
   background-repeat: no-repeat;
 }
@@ -231,11 +227,13 @@ article h1{
   font-weight: 700;
 }
 
+/*Тут проблемы с фоном или рамкой*/
 .sign-in{
   color: #5a5a5a ;
   text-align: left;
   background-color: #f8f7f4;
-  background-size: 560px 220px;
+  background-size: 550px 210px;
+  background-image: url("img/post-background.jpg") no-repeat;
 }
 
 .sign-in p{
@@ -244,7 +242,18 @@ article h1{
   font-weight: 400;
 }
 
-/*Место для стилизации формы с кнопкой*/
+.sign-in input[type="text"] {
+  font: inherit;
+  background-color: #fefefe;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  /*box-shadow: inset 3px 3px 0 7px rgba(0, 0, 0, 0.35);*/
+}
+
+.sign-in input[type="submit"]{
+  font-size: 18px;
+  font-height: 24px;
+}
+
 
 .location-and-contacts{
 
@@ -288,3 +297,19 @@ article h1{
 }
 
 /*Место для стилизации кнопки*/
+
+.main-footer{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.info-list-item:first-child{
+  font-weight: 700;
+}
+
+.copyright .copyright-developer{
+  font-size: 12px;
+}
