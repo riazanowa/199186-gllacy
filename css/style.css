@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.main-navigation,
+.user-navigation,
+.offers-list,
+.best-sellers-list,
+.features-list,
+.social {
+  list-style: none;
+}
+
+.main-navigation a,
+.best-sellers a,
+article a,
+.main-footer a{
+  color: #ffffff;
+}
+
+.contacts {
+  text-align: right;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.contacts .work-time {
+  font-size: 14px;
+  line-height: 16px;
+}
+.contacts .phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.container {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #849d8f;
+}
+
+.slider p {
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.offers {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #849d8f;
+}
+
+.first-offer {
+  background-image: url("img/rasberry-background.jpg");
+  background-size: 560px 229px;
+  background-repeat: no-repeat;
+}
+
+.first-offer h3{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.first-offer p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.second-offer {
+  background-image: url("img/chocolate-background.jpg");
+  background-size: 560px 229px;
+  background-repeat: no-repeat;
+}
+
+.second-offer h3{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.first-offer p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
