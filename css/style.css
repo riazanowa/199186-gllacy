@@ -341,3 +341,47 @@ textarea {
   background-color: #fffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
+
+.catalog-list{
+  color: #323232;
+  background-color: #fefefe;
+  border: 1px solid rgba(194, 206, 199, 0.52);
+}
+
+.catalog-list a{
+  color: #323232;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-list a:first-of-type{
+  font-weight: 700;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+  background-color: #fbded7;
+}
+
+.catalog-list a:active{
+  background-color: #f6b5a5;
+}
+
+.catalog-list a:visited{
+  background-color: #d07058;
+}
+
+.answer-info p{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.login-modal .restore,
+.login-modal .regestration {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+}
