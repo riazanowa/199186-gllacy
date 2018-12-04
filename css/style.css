@@ -44,7 +44,10 @@ a {
   background-color: #849d8f;
 }
 
-.main-navigation,
+.main-navigation ul:first-of-type,
+.user-navigation,
+.social ul,
+.info-list,
 .offers-list,
 .best-sellers-list,
 .features-list,
