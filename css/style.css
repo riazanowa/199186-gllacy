@@ -70,7 +70,7 @@ a {
 
 .button-search{
   backround-color: rgba(50, 50, 50, 0.2);
-  background-image: url("img/Zoom-icon.svg") no-repeat;
+  background-image: url("../img/Zoom-icon.svg") no-repeat;
   background-image-size: 17px 17px;
 }
 
@@ -151,7 +151,7 @@ article a:active{
 
 .first-offer {
   background-color: #a10416;
-  background-image: url("img/rasberry-background.jpg");
+  background-image: url("../img/raspberry_background.jpg");
   background-position: 0 0;
   background-size: 560px 229px;
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@ article a:active{
 
 .second-offer {
   background-color: #251610;
-  background-image: url("img/chocolate-background.jpg");
+  background-image: url("../img/chocolate_background.jpg");
   background-position: 0 0;
   background-size: 560px 229px;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ article a:active{
 
 .features{
   background-color: #ece0c7;
-  background-image: url("img/waffle-background.jpg");
+  background-image: url("../img/waffle-background.jpg");
   background-position: 0 0;
   background-size: 1146px 306px;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ article{
   color: #323232;
   text-align: left;
   background-color: #ffffff;
-  background-image: url("img/strawberry-background.jpg");
+  background-image: url("../img/strawberry-background.jpg");
   background-position: 0 0;
   background-size: 560px 220px;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ article h1{
   text-align: left;
   background-color: #f8f7f4;
   background-size: 550px 210px;
-  background-image: url("img/post-background.jpg") no-repeat;
+  background-image: url("../img/post-background.jpg") no-repeat;
 }
 
 .sign-in p{
