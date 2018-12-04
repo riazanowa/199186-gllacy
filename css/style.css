@@ -225,7 +225,7 @@ article a:active{
 }
 
 .best-sellers img{
-  border-radius: 134px;  
+  border-radius: 134px;
 }
 
 .features{
@@ -233,6 +233,7 @@ article a:active{
   background-image: url("../img/waffle-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .features{
@@ -259,6 +260,7 @@ article{
   background-image: url("../img/strawberry-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 article b{
@@ -280,6 +282,7 @@ article h1{
   background-color: #f8f7f4;
 
   background-image: url("../img/sign-in-backgroundjpg.jpg"), url("../img/post-background.jpg");
+  border-radius: 15px;
 }
 
 .sign-in p{
@@ -309,7 +312,7 @@ article h1{
   color: #323232;
   text-align: left;
   background-color: #fefefe;
-  background-size: 560px 220px;
+  border-radius: 15px;
 }
 
 .adress-info{
@@ -382,6 +385,7 @@ article h1{
 .modal-answer input[type="text"],
 textarea {
   font: inherit;
+  font-weight: 400;
   color: #999999;
 
   background-color: #fffffff;
@@ -425,7 +429,7 @@ textarea {
 }
 
 .login-modal .restore,
-.login-modal .regestration {
+.login-modal .registration {
   color: #323232;
   font-size: 13px;
   line-height: 24px;
@@ -436,10 +440,10 @@ textarea {
 
 .restore:hover,
 .restore:focus,
-.regestration:hover,
-.regestration:focus,
+.registration:hover,
+.registration:focus,
 .restore:active,
-.regestration:active {
+.registration:active {
   color: #ffbc9e;
   text-decoration: none;
 }
