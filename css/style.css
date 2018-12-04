@@ -82,6 +82,8 @@ article a{
 }
 
 .button-search{
+  width: 17px;
+  heigth: 17px;
   backround-color: rgba(50, 50, 50, 0.2);
   background-image: url("../img/Zoom-icon.svg") no-repeat;
   background-image-size: 17px 17px;
