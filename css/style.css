@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: #ffffff;
 }
 
 .button {
@@ -48,7 +48,8 @@ a {
 .offers-list,
 .best-sellers-list,
 .features-list,
-.social {
+.social,
+.catalog-list{
   list-style: none;
 }
 
