@@ -48,6 +48,7 @@ article a{
 .basket-link a:focus{
   color: #323232;
   background-color: #f8f7f4;
+  /* Как иконку черным цветом покрасить в CSS??? */
 }
 
 .button {
@@ -221,6 +222,10 @@ article a:active{
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+}
+
+.best-sellers img{
+  border-radius: 134px;  
 }
 
 .features{
