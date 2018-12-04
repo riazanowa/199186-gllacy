@@ -26,14 +26,29 @@ article a{
   text-decoration-color: #323232;
 }
 
-.login-link a{
+.login-link a,
+.basket-link a{
   background-color: rgba(255, 255, 255, 0.2);
-  background-image:url("../img/Signin-icon.svg");
   background-repeat: no-repeat;
   border: none;
   border-radius: 20px;
 }
 
+.login-link a{
+  background-image:url("../img/Signin-icon.svg");
+}
+
+.basket-link a{
+  background-image:url("../img/basket-icon.svg");
+}
+
+.login-link a:hover,
+.login-link a:focus,
+.basket-link a:hover,
+.basket-link a:focus{
+  color: #323232;
+  background-color: #f8f7f4;
+}
 
 .button {
   font: inherit;
