@@ -3,7 +3,7 @@ body {
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  font-height: 22px;
+  line-height: 22px;
   font-weight: 700;
   color: #ffffff;
   background-color: #849d8f;
@@ -251,7 +251,7 @@ article h1{
 
 .sign-in input[type="submit"]{
   font-size: 18px;
-  font-height: 24px;
+  line-height: 24px;
 }
 
 
