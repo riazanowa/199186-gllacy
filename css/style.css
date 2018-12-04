@@ -165,8 +165,8 @@ article a:active{
 .first-offer {
   background-color: #a10416;
   background-image: url("../img/raspberry_background.jpg");
+  border-radius: 15px;
   background-position: 0 0;
-  background-size: 560px 229px;
   background-repeat: no-repeat;
 }
 
@@ -174,7 +174,7 @@ article a:active{
   background-color: #251610;
   background-image: url("../img/chocolate_background.jpg");
   background-position: 0 0;
-  background-size: 560px 229px;
+  border-radius: 15px;
   background-repeat: no-repeat;
 }
 
@@ -201,7 +201,6 @@ article a:active{
   background-color: #ece0c7;
   background-image: url("../img/waffle-background.jpg");
   background-position: 0 0;
-  background-size: 1146px 306px;
   background-repeat: no-repeat;
 }
 
@@ -228,7 +227,6 @@ article{
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.jpg");
   background-position: 0 0;
-  background-size: 560px 220px;
   background-repeat: no-repeat;
 }
 
@@ -249,8 +247,8 @@ article h1{
   color: #5a5a5a ;
   text-align: left;
   background-color: #f8f7f4;
-  background-size: 550px 210px;
-  background-image: url("../img/post-background.jpg") no-repeat;
+
+  background-image: url("../img/sign-in-backgroundjpg.jpg"), url("../img/post-background.jpg");
 }
 
 .sign-in p{
