@@ -26,6 +26,15 @@ article a{
   text-decoration-color: #323232;
 }
 
+.login-link a{
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image:url("../img/Signin-icon.svg");
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 20px;
+}
+
+
 .button {
   font: inherit;
 
