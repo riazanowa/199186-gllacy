@@ -386,10 +386,16 @@ article h1{
 textarea {
   font: inherit;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
   color: #999999;
 
   background-color: #fffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.sign-in input[type="email"]{
+  font-size: 16px;
 }
 
 .catalog-list{
