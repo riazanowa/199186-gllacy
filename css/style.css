@@ -421,6 +421,50 @@ article h1{
   color: rgba(255, 255, 255, 0.4);
   opacity: 0.4;
 }
+.catalog{
+  background-color: #849d8f;
+}
+
+.catalog-list{
+  list-style: none;
+}
+
+.catalog a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.catalog-list h3{
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.catalog-item:hover,
+.catalog-item:focus{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  /* Вставить кнопку при наведении */
+}
+
+.catalog-item img{
+  border-radius: 134px;
+}
+
+.catalog-item-price{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-item .price-amount{
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
 
 .main-footer{
   font-weight: 400;
