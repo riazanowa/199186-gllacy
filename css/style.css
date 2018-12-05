@@ -381,6 +381,12 @@ article h1{
   color: #ffffff;
 }
 
+.inner-page h1{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
 
 .main-footer{
   font-weight: 400;
