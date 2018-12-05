@@ -360,11 +360,27 @@ article h1{
   font-weight: 400;
 }
 
-/*Место для стилизации кнопки*/
 /*Начало стилизации страницы каталога*/
 .breadcrumbs {
   list-style: none;
 }
+
+.breadcrumbs a{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.breadcrumbs-current{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 
 .main-footer{
   font-weight: 400;
