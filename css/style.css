@@ -388,6 +388,40 @@ article h1{
   color: #ffffff;
 }
 
+.filters fieldset{
+  border: none;
+}
+
+.filters legend{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filters ul{
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.filter-input:hover,
+.filter-input:focus,
+.filter-option label:hover,
+.filter-option label:focus{
+    color: #ffffff;
+}
+
+.filter-input:disabled,
+.filter-option label:disabled{
+  /* Здесь не работает цвет для label при disabled, а у input работает */
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0.4;
+}
+
 .main-footer{
   font-weight: 400;
   font-size: 13px;
