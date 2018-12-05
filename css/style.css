@@ -28,18 +28,21 @@ article a{
 
 .login-link a,
 .basket-link a{
+  height: 32px;
+  width: 90px;
   background-color: rgba(255, 255, 255, 0.2);
+  background-position: left;
   background-repeat: no-repeat;
   border: none;
   border-radius: 20px;
 }
 
-.login-link a{
-  background-image:url("../img/Signin-icon.svg");
-}
-
 .basket-link a{
   background-image:url("../img/basket-icon.svg");
+}
+
+.login-link a{
+  background-image: url("../img/Signin-icon.svg");
 }
 
 .login-link a:hover,
@@ -107,14 +110,23 @@ article a{
 }
 
 .button-search{
-  height: 35px;
-  width: 35px;
+  height: 32px;
+  width: 32px;
   background-color: rgba(255, 255, 255, 0.2);
   background-image: url("../img/Zoom-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   border-radius: 20px;
+}
+
+.button-search:hover,
+.button-search:focus{
+  color: #323232;
+  background-color: #f8f7f4;
+  /*Не работает. Нужно придумать что-то*/
+  background-image: url("../img/black-zoom.svg");
+
 }
 
 .best-sellers a:hover,
@@ -414,9 +426,10 @@ textarea {
   line-height: 16px;
 }
 
-.catalog-list a:first-of-type{
-  font-weight: 700;
+.catalog-list-item:not(:first-of-type){
+    font-weight: 400;
 }
+
 
 .catalog-list a:hover,
 .catalog-list a:focus {
