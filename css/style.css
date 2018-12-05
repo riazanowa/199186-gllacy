@@ -297,6 +297,7 @@ article h1{
   background-color: #f8f7f4;
 
   background-image: url("../img/sign-in-backgroundjpg.jpg"), url("../img/post-background.jpg");
+  background-position: 5px 5px , cover;
   border-radius: 15px;
 }
 
@@ -466,6 +467,34 @@ article h1{
   font-weight: 700;
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a{
+  color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus{
+  background-color: rgba(255, 255, 255, 0.2);
+  background-size: 25px;
+  border-radius: 12px;
+}
+
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.pagination-item a:active{
+  background-color: rgba(255, 255, 255, 0.2);
+  background-size: 25px;
+  border-radius: 12px;
+}
+
+
 .main-footer{
   font-weight: 400;
   font-size: 13px;
@@ -491,6 +520,10 @@ article h1{
 }
 .copyright .copyright-developer{
   font-size: 12px;
+}
+
+.copyright a:last-of-type{
+  border-bottom: 1px solid #ffffff;
 }
 
 .modal{
@@ -571,4 +604,27 @@ textarea {
 .registration:active {
   color: #ffbc9e;
   text-decoration: none;
+}
+
+.modal-basket{
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.shopping-list{
+  list-style: none;
+}
+
+.shoppig-list-item span{
+  color: #999999;
+}
+
+.total-amount-of-money{
+  color: #323232;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
 }
