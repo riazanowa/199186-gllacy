@@ -361,6 +361,10 @@ article h1{
 }
 
 /*Место для стилизации кнопки*/
+/*Начало стилизации страницы каталога*/
+.breadcrumbs {
+  list-style: none;
+}
 
 .main-footer{
   font-weight: 400;
@@ -429,7 +433,6 @@ textarea {
 .catalog-list-item:not(:first-of-type){
     font-weight: 400;
 }
-
 
 .catalog-list a:hover,
 .catalog-list a:focus {
