@@ -17,7 +17,8 @@ a {
 .main-navigation-list-item>a,
 .best-sellers-list h3,
 .info-list-item a{
-    border-bottom: 1px solid #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(194, 206, 199, 0.52);
 }
 
 article a{
@@ -28,8 +29,8 @@ article a{
 
 .login-link a,
 .basket-link a{
-  height: 32px;
   width: 90px;
+  padding: 10px 15px 10px 45px;
   background-color: rgba(255, 255, 255, 0.2);
   background-position: left;
   background-repeat: no-repeat;
@@ -39,10 +40,12 @@ article a{
 
 .basket-link a{
   background-image:url("../img/basket-icon.svg");
+  background-position: 15px;
 }
 
 .login-link a{
   background-image: url("../img/Signin-icon.svg");
+  background-position: 15px;
 }
 
 .login-link a:hover,
@@ -56,6 +59,7 @@ article a{
 
 .button {
   font: inherit;
+  padding: 10px 20px;
 
   text-align: center;
   color: #ffffff;
@@ -68,9 +72,17 @@ article a{
   border-radius: 20px;
 }
 
+.button-in-slider {
+  width: 280px;
+  padding: 10px 40px;
+  font-size: 32px;
+  line-height: 44px;
+  border-radius: 30px;
+}
+
 
 .button:hover,
-.button:focus{
+.button:focus {
   background-color: #eb553b,
 }
 
@@ -371,8 +383,8 @@ article h1{
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-  text-decoration: none;
-  border-bottom: 1px solid #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(194, 206, 199, 0.52);
 }
 
 .breadcrumbs-current{
@@ -428,6 +440,8 @@ article h1{
 
 .catalog-list{
   list-style: none;
+  background-color: #849d8f;
+  color: #323232;
 }
 
 .catalog a{
@@ -438,7 +452,6 @@ article h1{
 .catalog-list h3{
   font-size: 16px;
   line-height: 22px;
-  border-bottom: 1px solid #ffffff;
   color: #ffffff;
 }
 
@@ -467,6 +480,31 @@ article h1{
   font-weight: 700;
 }
 
+.catalog-list a{
+  color: #323232;
+  text-decoration: underline;
+  text-decoration-color: rgba(194, 206, 199, 0.52);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-list-item:not(:first-of-type){
+  font-weight: 400;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+  background-color: #fbded7;
+}
+
+.catalog-list a:active{
+  background-color: #f6b5a5;
+}
+
+.catalog-list a:visited{
+  background-color: #d07058;
+}
+
 .pagination-list {
   list-style: none;
 }
@@ -484,7 +522,6 @@ article h1{
 
 .pagination-item-current a {
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
@@ -523,7 +560,8 @@ article h1{
 }
 
 .copyright a:last-of-type{
-  border-bottom: 1px solid #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(194, 206, 199, 0.52);
 }
 
 .modal{
@@ -550,35 +588,6 @@ textarea {
   font-size: 16px;
 }
 
-.catalog-list{
-  color: #323232;
-  background-color: #fefefe;
-  border: 1px solid rgba(194, 206, 199, 0.52);
-}
-
-.catalog-list a{
-  color: #323232;
-  text-decoration: underline;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.catalog-list-item:not(:first-of-type){
-    font-weight: 400;
-}
-
-.catalog-list a:hover,
-.catalog-list a:focus {
-  background-color: #fbded7;
-}
-
-.catalog-list a:active{
-  background-color: #f6b5a5;
-}
-
-.catalog-list a:visited{
-  background-color: #d07058;
-}
 
 .answer-info p{
   font-size: 24px;
