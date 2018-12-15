@@ -259,7 +259,7 @@ article a:active{
   background-color: #ece0c7;
   background-image: url("../img/waffle-background.jpg");
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border-radius: 15px;
 }
 
@@ -308,9 +308,18 @@ article h1{
   text-align: left;
   background-color: #f8f7f4;
 
-  background-image: url("../img/sign-in-backgroundjpg.jpg"), url("../img/post-background.jpg");
-  background-position: 5px 5px , cover;
+  background-image:  url("../img/post-background.jpg");
+  background-repeat: repeat;
+  background-position: cover;
   border-radius: 15px;
+}
+
+.sign-in-wrap {
+  background-image: url("../img/sign-in-backgroundjpg.jpg");
+  background-repeat: repeat;
+  background-position: 5px 5px;
+  border-radius: 15px;
+
 }
 
 .sign-in p{
@@ -429,7 +438,7 @@ article h1{
 }
 
 .filter-input:disabled,
-.filter-option label:disabled{
+.filter-option label:hover:disabled{
   /* Здесь не работает цвет для label при disabled, а у input работает */
   color: rgba(255, 255, 255, 0.4);
   opacity: 0.4;
