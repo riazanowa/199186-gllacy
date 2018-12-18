@@ -29,7 +29,6 @@ article a{
 
 .login-link a,
 .basket-link a{
-  width: 90px;
   padding: 10px 15px 10px 45px;
   background-color: rgba(255, 255, 255, 0.2);
   background-position: left;
@@ -123,6 +122,7 @@ article a{
 }
 
 .user-navigation a{
+  display: inline-block;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -235,6 +235,7 @@ article a:active{
   border-radius: 15px;
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 560px auto;
 }
 
 .second-offer {
@@ -243,6 +244,7 @@ article a:active{
   background-position: 0 0;
   border-radius: 15px;
   background-repeat: no-repeat;
+  background-size: 560px auto;
 }
 
 .best-sellers{
@@ -670,12 +672,13 @@ body {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  padding: 10px 25px;
 }
 
 .main-header-logo {
   width: 154px;
   height: 64px ;
-  padding: 10px 25px;
+  padding-right: 25px;
 }
 
 .main-navigation {
@@ -692,12 +695,15 @@ body {
   margin: 0;
   padding: 0;
   margin-left: auto;
-  margin-top: 30px;
-  margin-right: 25px;
+  margin-top: 13px;
 }
 
 .user-navigation li {
   margin-left: 10px;
+}
+
+.user-navigation li:last-child {
+  margin-right: 0;
 }
 
 .main-navigation-list {
@@ -707,7 +713,7 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 
   list-style: none;
 }
@@ -726,4 +732,70 @@ body {
   margin-top: ;
 }
 
+.contacts p {
+  margin: 0;
+  margin-top: 10px;
+}
+
 /* Конец оформления сетки хедера */
+
+/* Оформление сетки слайдера */
+.slider {
+  margin-bottom: 40px;
+
+  background-image: url(img/main_icecreams.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Оформление сетки блока предложений */
+.offers-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 1146px;
+
+  list-style: none;
+}
+
+.offers-list .first-offer {
+  width: 560px;
+}
+
+.offers-list .second-offer {
+  width: 560px;
+}
+
+.offers-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers-list-item h3 {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  margin-left:20px;
+  padding: 0;
+}
+
+.offers-list-item p {
+  margin: 0;
+  margin-left:20px;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.offers-list-item .button {
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+/* Конец оформления сетки блока предложений */
+
+/*оформление сетки блока предложений */
