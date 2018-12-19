@@ -27,6 +27,11 @@ article a{
   text-decoration-color: #323232;
 }
 
+article a:hover {
+  text-decoration-color: #e84d37;
+}
+
+
 .login-link a,
 .basket-link a{
   padding: 10px 15px 10px 45px;
@@ -851,6 +856,7 @@ body {
   width: 1147px;
   margin-left: 25px;
   margin-right: 25px;
+  margin-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px ;
   padding-bottom: 30px;
@@ -897,4 +903,40 @@ body {
   margin: 0;
 
   padding: 0;
+}
+
+/*Разметка сетки блока статьи и почты */
+
+.article-signin-wrap {
+  width: 1146px;
+  margin: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article {
+  width: 560px;
+  min-height: 220px;
+}
+
+article p {
+  margin: 0;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+article h1 {
+  width: 290px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.sign-in {
+  width: 560px;
 }
