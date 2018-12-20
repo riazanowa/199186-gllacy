@@ -160,6 +160,7 @@ article a:hover {
 .main-footer a:focus,
 .main-footer a:active{
   color: #ffbc9e;
+  text-decoration-color: #ffbc9e;
   font-weight: 500;
 }
 
@@ -337,12 +338,13 @@ article h1{
 .sign-in-wrap {
   background-image: url("../img/sign-in-backgroundjpg.jpg");
   background-repeat: repeat;
-  background-position: 5px 5px;
   border-radius: 15px;
 
 }
 
 .sign-in p{
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -674,6 +676,7 @@ body {
 }
 
 .main-header {
+  width: 1146px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -822,6 +825,7 @@ body {
 
 .best-sellers-list-item {
   width: 267px;
+  position: relative;
   margin-right: 25px;
   display: flex;
   flex-direction: column;
@@ -845,8 +849,8 @@ body {
 }
 
 .best-sellers-list-item p {
-  position: relative;
-  top: 115px;
+  position: absolute;
+  top: 210px;
   margin: 0px;
   padding: 0px;
 }
@@ -861,6 +865,7 @@ body {
   padding-right: 20px ;
   padding-bottom: 30px;
   padding-top: 30px;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -909,7 +914,8 @@ body {
 
 .article-signin-wrap {
   width: 1146px;
-  margin: 40px;
+  margin: 20px;
+  margin-right: 0px;
 
   display: flex;
   flex-direction: row;
@@ -919,6 +925,7 @@ body {
 article {
   width: 560px;
   min-height: 220px;
+  margin-right: 25px;
 }
 
 article p {
@@ -939,4 +946,62 @@ article h1 {
 
 .sign-in {
   width: 560px;
+  padding: 5px;
 }
+
+.sign-in-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in p {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+}
+
+.sign-in input[type="email"] {
+  width: 365px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #999999;
+}
+
+.sign-in button {
+  width: 130px;
+  font: inherit;
+  font-weight: 400;
+  padding: 10px 20px;
+
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgb(160, 32, 11, 0.76);
+  vertical-align: middle;
+
+  background-color: #eb553b;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 20px;
+}
+
+.sign-in button:hover,
+.sign-in button:focus {
+  background-color: #f17b64;
+  outline: none;
+}
+
+.sign-in button:active {
+    box-shadow: inset 0 2px 0 0 #ac1000;
+    /*Свойство градиента прописать*/
+}
+
+/*Конец разметки сетки блока статьи и почты */
