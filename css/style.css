@@ -27,7 +27,8 @@ article a{
   text-decoration-color: #323232;
 }
 
-article a:hover {
+article a:hover,
+article a:focus {
   text-decoration-color: #e84d37;
 }
 
@@ -126,6 +127,15 @@ article a:hover {
   color: #ffffff;
 }
 
+.best-sellers a:hover,
+.best-sellers a:focus,
+.main-footer a:hover,
+.main-footer a:focus {
+  text-decoration-color: #ffbc9e;
+}
+
+
+
 .user-navigation a{
   display: inline-block;
   font-size: 14px;
@@ -153,9 +163,6 @@ article a:hover {
 
 }
 
-.best-sellers a:hover,
-.best-sellers a:focus,
-.best-sellers a:active,
 .main-footer a:hover,
 .main-footer a:focus,
 .main-footer a:active{
@@ -198,6 +205,11 @@ article a:active{
   color: #ffffff;
   font-weight: bold;
   background-color: #849d8f;
+}
+
+.slider {
+  background-image: url("../img/main_icecreams.png");
+  background-repeat: no-repeat;
 }
 
 .slider p {
@@ -276,6 +288,13 @@ article a:active{
   border-radius: 134px;
 }
 
+.best-sellers-list-item:hover,
+.best-sellers-list-item:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  /*Place for button */
+}
+
 .features{
   background-color: #ece0c7;
   background-image: url("../img/waffle-background.jpg");
@@ -323,7 +342,6 @@ article h1{
   font-weight: 700;
 }
 
-/*Тут проблемы с фоном или рамкой*/
 .sign-in{
   color: #5a5a5a ;
   text-align: left;
@@ -523,10 +541,6 @@ article h1{
   font-weight: 400;
 }
 
-.catalog-list a:hover,
-.catalog-list a:focus {
-  background-color: #fbded7;
-}
 
 .catalog-list a:active{
   background-color: #f6b5a5;
@@ -675,6 +689,12 @@ body {
   min-width: 1200px;
 }
 
+.main-container,
+.inner-page {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-header {
   width: 1146px;
   margin-bottom: 30px;
@@ -750,10 +770,6 @@ body {
 /* Оформление сетки слайдера */
 .slider {
   margin-bottom: 40px;
-
-  background-image: url(img/main_icecreams.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*Оформление сетки блока предложений */
@@ -1000,8 +1016,184 @@ article h1 {
 }
 
 .sign-in button:active {
+    background-color: #eb553b;
     box-shadow: inset 0 2px 0 0 #ac1000;
     /*Свойство градиента прописать*/
 }
 
 /*Конец разметки сетки блока статьи и почты */
+/*Разметка футера*/
+.main-footer {
+  width: 1146px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.main-footer .social {
+  width: 267px;
+  margin-right: 26px;
+}
+
+.social ul {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.main-footer .info {
+  width: 560px;
+}
+
+.main-footer .info-list {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer .copyright {
+  width: 267px;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright .copyright-developer {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.copyright-developer a:hover,
+.copyright-developer a:focus {
+  text-decoration-color: #ffbc9e;
+}
+
+
+
+/*Разметка сетки каталога*/
+.main-navigation-list .current {
+  background-color: #c67d67;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+.breadcrumbs {
+  width: 265px;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: flex-start;
+}
+
+.breadcrumbs li{
+  margin-right: 20px;
+
+}
+
+.breadcrumbs a {
+  display: inline-flex;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+  text-decoration-color: #ffbc9e;
+  color: #ffbc9e;
+}
+/*Конец формления сетки breadcrumbs*/
+
+/*Place for filters*/
+
+.catalog {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.catalog-list {
+  width: 1146px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 267px;
+  margin-bottom: 40px;
+  position: relative;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-item a {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.catalog-item h3 {
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  padding: 0;
+  font-weight: 400;
+}
+
+.catalog-item-image {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item .catalog-item-price {
+  position: absolute;
+  top: 210px;
+  margin: 0px;
+  padding: 0px;
+}
+/*Конец разметки каталога */
+/*Разметка пагинатора */
+.pagination-list-wrap {
+  width: 1146px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: flex-end;
+}
+
+.pagination-list {
+  width: 190px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-item {
+  margin-left: 25px;
+}
