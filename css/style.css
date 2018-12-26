@@ -740,6 +740,13 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-navigation a,
+.user-navigation a {
+  display: block;
+  vertical-align: middle;
 }
 
 .user-navigation {
