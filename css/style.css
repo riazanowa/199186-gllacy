@@ -66,14 +66,54 @@ article a:focus {
   border-radius: 20px;
 }
 
-.basket-link a{
-  background-image:url("../img/basket-icon.svg");
-  background-position: 15px;
+.user-navigation .basket-link {
+  position: relative;
 }
 
-.login-link a{
+.basket-link::before {
+  content: " ";
+
+  position: absolute;
+  top: 7px;
+  left: 15px;
+
+  width: 21px;
+  height: 20px;
+
+  background-image: url("../img/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket-link:hover::before,
+.basket-link:active::before,
+.basket-link:focus::before{
+  
+}
+
+.user-navigation .login-link {
+  position: relative;
+}
+
+.login-link::before {
+  content: " ";
+
+  position: absolute;
+  top: 7px;
+  left: 15px;
+
+  width: 21px;
+  height: 19px;
+
   background-image: url("../img/Signin-icon.svg");
-  background-position: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link:hover::before,
+.login-link:active::before,
+.login-link:focus::before {
+
 }
 
 .login-link a:hover,
@@ -82,7 +122,6 @@ article a:focus {
 .basket-link a:focus{
   color: #323232;
   background-color: #f8f7f4;
-  /* Как иконку черным цветом покрасить в CSS??? */
 }
 
 .button {
@@ -160,7 +199,6 @@ article a:focus {
 
 
 .user-navigation a{
-  display: inline-block;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
