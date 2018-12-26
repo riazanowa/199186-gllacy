@@ -14,6 +14,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation-list-item>a,
 .best-sellers-list h3,
 .info-list-item a{
@@ -141,6 +164,10 @@ article a:focus {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.catalog-basket-link {
+  white-space: nowrap;
 }
 
 .button-search{
@@ -1084,6 +1111,7 @@ article h1 {
 
 /*Разметка сетки каталога*/
 .main-navigation-list .current {
+  margin-top: -10px;
   background-color: #c67d67;
   padding: 10px 15px;
   border: none;
@@ -1102,7 +1130,7 @@ article h1 {
 
 .breadcrumbs li{
   margin-right: 20px;
-
+  line-height: 16px;
 }
 
 .breadcrumbs a {
