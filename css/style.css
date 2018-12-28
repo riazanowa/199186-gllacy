@@ -626,8 +626,8 @@ article h1{
 .pagination-item a:hover,
 .pagination-item a:focus{
   background-color: rgba(255, 255, 255, 0.2);
-  background-size: 25px;
-  border-radius: 12px;
+  background-size: 27px;
+  border-radius: 15px;
 }
 
 .pagination-item-current a {
@@ -635,10 +635,15 @@ article h1{
   background-color: #f8f7f4;
 }
 
+.pagination-item-current a:hover {
+  color: #323232;
+  background-color: #f8f7f4;  
+}
+
 .pagination-item a:active{
   background-color: rgba(255, 255, 255, 0.2);
-  background-size: 25px;
-  border-radius: 12px;
+  background-size: 27px;
+  border-radius: 15px;
 }
 
 
@@ -1248,6 +1253,23 @@ article h1 {
   flex-direction: column;
 }
 
+.info-list .info-list-item:first-child {
+  position: relative;
+}
+
+.info-list .heart-icon::before {
+  content: " ";
+  position: absolute;
+  top:3px;
+  left: -20px;
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/heart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .main-footer .copyright {
   width: 267px;
   margin: 0;
@@ -1285,11 +1307,32 @@ article h1 {
 
   display: flex;
   flex-direction: flex-start;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs li{
+.breadcrumbs li {
+  position: relative;
   margin-right: 20px;
   line-height: 16px;
+}
+
+.breadcrumbs li::after {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  right: -13px;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+
+}
+
+.breadcrumbs li:last-child::after {
+  margin-right: 0;
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
 }
 
 .breadcrumbs a {
@@ -1325,7 +1368,7 @@ article h1 {
 
 .catalog-item {
   width: 267px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   position: relative;
   margin-right: 25px;
   display: flex;
@@ -1344,17 +1387,21 @@ article h1 {
 .catalog-item h3 {
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
-  padding: 0;
+  padding: 0 10px;
   font-weight: 400;
 }
 
 .catalog-item-image {
+  width: 267px;
+  height: 267px;
   margin: 0;
   padding: 0;
 }
 
 .catalog-item .catalog-item-price {
+  display: flex;
   position: absolute;
   top: 210px;
   margin: 0px;
@@ -1370,7 +1417,7 @@ article h1 {
 }
 
 .pagination-list {
-  width: 190px;
+  width: 250px;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -1379,8 +1426,19 @@ article h1 {
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
-  margin-left: 25px;
+  margin-left: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 33px;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
