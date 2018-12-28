@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="main-container">
+    <div class="site-wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -48,10 +49,28 @@
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженого "Глэйси"</h1>
       <section class="slider">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
+        <div class="slider-controls">
+          <label for="product-1"></label>
+          <label for="product-2"></label>
+          <label for="product-3"></label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slider-1">
+            <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slider-2">
+            <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slider-3">
+            <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
         <!-- <img src="img/main_icecreams.png" width="1045" height="881"
         alt="Два рожка крем-брюле и пломбир с малиновым джемом">-->
-        <button class="button button-in-slider" type="button">Давайте оба!</button>
+
 
         <ul class="slider-switches">
           <li class="slide-radio">
@@ -212,7 +231,7 @@
       </div>
       <section class="info">
         <ul class="info-list">
-          <li class="info-list-item"><a href="providerinfo.html"><span class="heart-icon">x</span>Для поставщиков</a></li>
+          <li class="info-list-item"><a href="providerinfo.html"><span class="heart-icon">Для поставщиков</span></a></li>
           <li class="info-list-item"><a href="production.html">О производстве</a></li>
           <li class="info-list-item"><a href="documents.html">Наши документы</a></li>
           <li class="info-list-item"><a href="ecostandarts.html">Экологические стандарты</a></li>
@@ -274,6 +293,6 @@
         <input type="search" name="search" id="search-field" placeholder="Что ищем?">
       </form>
     </section>
-
+  </div>
   </body>
 </html>
