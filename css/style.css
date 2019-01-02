@@ -458,7 +458,20 @@ article a:active{
 .best-sellers-list-item:focus {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-  /*Place for button */
+  border-radius: 5px;
+}
+
+.best-sellers-list-item:hover .show-product-button,
+.best-sellers-list-item:focus .show-product-button{
+  display: block;
+}
+
+.show-product-button {
+  display: none;
+  padding: 12px 17px;
+  box-sizing: border-box;
+  margin: 17px auto 20px;
+  width: 200px;
 }
 
 .features{
@@ -915,7 +928,7 @@ body {
 }
 
 .main-navigation-list {
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -931,12 +944,12 @@ body {
 }
 
 .main-navigation-list-item > a {
-  display: inline-block;
   vertical-align: middle;
 }
 
 .main-navigation-list-item:first-child:hover > a {
   padding: 10px 15px 10px 15px;
+  margin-top: -10px;
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
@@ -1104,7 +1117,11 @@ body {
 }
 
 .best-sellers-list-item {
-  width: 267px;
+  width: 293px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 5px;
   position: relative;
   margin-right: 25px;
   display: flex;
@@ -1700,11 +1717,44 @@ article h1 {
   color: #323232;
 
   background-color: #f8f7f4;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .login-modal {
+  box-sizing: border-box;
   width: 277px;
   padding: 20px;
+}
+
+.login-modal input[type="email"],
+.login-modal input[type="password"] {
+  width: 241px;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #999999;
+}
+
+.login-modal p {
+  margin: 0;
+  padding: 0;
+}
+
+.login-modal .login-form-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form-wrap button {
+  padding: 14px 25px;
+  margin-right: 20px;
+  border-radius: 20px;
 }
 
 .modal-search {
