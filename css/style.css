@@ -207,6 +207,10 @@ article a:focus {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-item1.png");
@@ -796,6 +800,7 @@ article h1{
   text-decoration-color: rgba(194, 206, 199, 0.52);
 }
 
+
 .modal{
   color: #323232;
 
@@ -1171,7 +1176,7 @@ body {
 
 .features p {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -1200,15 +1205,33 @@ body {
 
 .features-list-item  span {
     margin-right: 5px;
+    font-size: 0;
 }
 
 .features-list-item  span::before {
+  content: " ";
   position: absolute;
+  top: -15px;
   width: 49px;
   height: 49px;
-  background-image: url("../img/ice-cream-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.features-list-item-first span::before {
+  background-image: url("../img/ice-cream-icon.svg");
+}
+
+.features-list-item-second span::before {
+  background-image: url("../img/leaf-icon.svg");
+}
+
+.features-list-item-third span::before {
+  background-image: url("../img/cow-icon.svg");
+}
+
+.features-list-item-fourth span::before {
+  background-image: url("../img/thermometr-icon.svg");
 }
 
 .features-list-item p {
@@ -1216,6 +1239,7 @@ body {
   margin: 0;
 
   padding: 0;
+  padding-left: 54px;
 }
 
 /*Разметка сетки блока статьи и почты */
@@ -1320,7 +1344,9 @@ article h1 {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+
   padding: 0;
+  padding-bottom: 30px;
 
   display: flex;
   flex-direction: row;
@@ -1365,6 +1391,8 @@ article h1 {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
+  border: 2px solid #c1cdc6;
+  border-radius: 50%;
 }
 
 .button-tw:hover::before,
@@ -1390,6 +1418,8 @@ article h1 {
   background-image: url("../img/instagram-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: 2px solid #c1cdc6;
+  border-radius: 50%;
   opacity: 0.8;
 }
 
@@ -1417,6 +1447,8 @@ article h1 {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
+  border: 2px solid #c1cdc6;
+  border-radius: 50%;
 }
 
 .button-vk:hover::before,
@@ -1443,6 +1475,8 @@ article h1 {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
+  border: 2px solid #c1cdc6;
+  border-radius: 50%;
 }
 
 .button-fb:hover::before,
@@ -1499,8 +1533,9 @@ article h1 {
 }
 
 .copyright .copyright-developer {
+  width: 191px;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-left: auto;
   padding: 0;
 }
@@ -1764,7 +1799,7 @@ textarea {
 }
 
 .login-form-wrap button {
-  padding: 14px 25px;
+  padding: 13px 23px;
   margin-right: 20px;
   border-radius: 20px;
 }
@@ -1933,6 +1968,8 @@ textarea {
   content: "";
 
   position: absolute;
+  top: 10px;
+  right: 0px;
 
   width: 19px;
   height: 2px;
