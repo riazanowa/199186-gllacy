@@ -173,7 +173,8 @@ article a:focus {
   background-color: #f8f7f4;
 }
 
-.button {
+.button,
+.login-modal button {
   display: inline-block;
   padding: 10px 44px;
   font: inherit;
@@ -193,12 +194,18 @@ article a:focus {
   cursor: pointer;
 }
 
-.button:hover {
+
+.button:hover,
+.button:focus,
+.login-modal button:hover,
+.login-modal button:focus {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  outline: none;
 }
 
-.button:active {
+.button:active,
+.login-modal button:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -521,6 +528,7 @@ article a:active{
   box-sizing: border-box;
   margin: 17px auto 20px;
   width: 200px;
+  outline: none;
 }
 
 .features{
@@ -1691,6 +1699,7 @@ body {
   padding: 0;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
